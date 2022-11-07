@@ -8,25 +8,48 @@
     <title>Document</title>
 
     <style>
-        div{
-            align-content: center;
-            
+        div {
+            padding-left: 105px;
+            padding-top: 15px;
+        }
+
+        body {
+            padding: 50px;
+
+        }
+
+        fieldset {
+            margin: auto;
+            width: 350px;
+            height: 75px;
+            background-color: aqua;
+        }
+        select {
+            text-align: center;
+        }
+        h3{
+            padding-left: 655px;
         }
     </style>
 </head>
 
 <body>
-    <div id="selectOptions">
-        <select name="menuItems" id="menuItems">
-            <option value="">Pick an Item Option</option>
-            <option value="drinks">Drinks</option>
-            <option value="entrees">Entrees</option>
-            <option value="desserts">Desserts</option>
-        </select>
+    <h3>Pick an Item</h3>
+    <fieldset>
+        <div>
+            <select name="menuItems" id="menuItems">
+                <option value="">Pick an Item Option</option>
+                <option value="drinks">Drinks</option>
+                <option value="entrees">Entrees</option>
+                <option value="desserts">Desserts</option>
+            </select>
+            <br>
+            <select name="options" id="options">
+                <option value="">Options</option>
+            </select>
+        </div>
+    </fieldset>
 
-
-        <select name="options" id="options"></select>
-    </div>
 
     <script src="food-menu.js"></script>
 
